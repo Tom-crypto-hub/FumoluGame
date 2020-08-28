@@ -6,14 +6,23 @@ import java.util.List;
  * 职业
  */
 public class Profession {
+    // ID
+    private int ID;
+
     // 职业名
   private  String professionName;
 
-    // 攻击成长
-  private  int attackGrow;
+    // 魔法攻击成长
+  private int physicalAttackGrow;
 
-    // 防御力成长
-  private  int defenseGrow;
+    // 魔法攻击成长
+  private  int magicAttackGrow;
+
+    // 物理防御力成长
+  private  int physicalDefenseGrow;
+
+    // 魔法防御力成长
+    private  int magicDefenseGrow;
 
     // 血量成长
   private  int hpGrow;
@@ -24,12 +33,28 @@ public class Profession {
     // 职业可学技能
   private  List<Skill> skills;
 
-    public Profession(String professionName, int attackGrow, int defenseGrow, int hpGrow, int manaGrow) {
+  public Profession(){
+
+  }
+
+    public Profession(int ID, String professionName, int physicalAttackGrow, int magicAttackGrow, int physicalDefenseGrow, int magicDefenseGrow, int hpGrow, int manaGrow, List<Skill> skills) {
+        this.ID = ID;
         this.professionName = professionName;
-        this.attackGrow = attackGrow;
-        this.defenseGrow = defenseGrow;
+        this.physicalAttackGrow = physicalAttackGrow;
+        this.magicAttackGrow = magicAttackGrow;
+        this.physicalDefenseGrow = physicalDefenseGrow;
+        this.magicDefenseGrow = magicDefenseGrow;
         this.hpGrow = hpGrow;
         this.manaGrow = manaGrow;
+        this.skills = skills;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public String getProfessionName() {
@@ -40,20 +65,36 @@ public class Profession {
         this.professionName = professionName;
     }
 
-    public int getAttackGrow() {
-        return attackGrow;
+    public int getPhysicalAttackGrow() {
+        return physicalAttackGrow;
     }
 
-    public void setAttackGrow(int attackGrow) {
-        this.attackGrow = attackGrow;
+    public void setPhysicalAttackGrow(int physicalAttackGrow) {
+        this.physicalAttackGrow = physicalAttackGrow;
     }
 
-    public int getDefenseGrow() {
-        return defenseGrow;
+    public int getMagicAttackGrow() {
+        return magicAttackGrow;
     }
 
-    public void setDefenseGrow(int defenseGrow) {
-        this.defenseGrow = defenseGrow;
+    public void setMagicAttackGrow(int magicAttackGrow) {
+        this.magicAttackGrow = magicAttackGrow;
+    }
+
+    public int getPhysicalDefenseGrow() {
+        return physicalDefenseGrow;
+    }
+
+    public void setPhysicalDefenseGrow(int physicalDefenseGrow) {
+        this.physicalDefenseGrow = physicalDefenseGrow;
+    }
+
+    public int getMagicDefenseGrow() {
+        return magicDefenseGrow;
+    }
+
+    public void setMagicDefenseGrow(int magicDefenseGrow) {
+        this.magicDefenseGrow = magicDefenseGrow;
     }
 
     public int getHpGrow() {
@@ -78,5 +119,20 @@ public class Profession {
 
     public void setSkills(List<Skill> skills) {
         this.skills = skills;
+    }
+
+    @Override
+    public String toString() {
+        return "Profession{" +
+                "ID=" + ID +
+                ", professionName='" + professionName + '\'' +
+                ", physicalAttackGrow=" + physicalAttackGrow +
+                ", magicAttackGrow=" + magicAttackGrow +
+                ", physicalDefenseGrow=" + physicalDefenseGrow +
+                ", magicDefenseGrow=" + magicDefenseGrow +
+                ", hpGrow=" + hpGrow +
+                ", manaGrow=" + manaGrow +
+                ", skills=" + skills +
+                '}';
     }
 }

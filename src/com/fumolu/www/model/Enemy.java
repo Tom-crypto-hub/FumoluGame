@@ -4,14 +4,10 @@ import java.util.List;
 
 public class Enemy extends Character {
 
+    public Enemy(){}
 
-
-    public Enemy(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills) {
-        super(characterName, level, exp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, skills);
+    public Enemy(int ID, String characterName, int level, int exp, int maxExp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, int speed, Profession profession, List<Skill> skills) {
+        super(ID, characterName, level, exp, maxExp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, speed, profession, skills);
     }
 
-    // 根据等级去初始化角色信息
-//    public Enemy(String characterName, int level){
-//        super();
-//    }
 }

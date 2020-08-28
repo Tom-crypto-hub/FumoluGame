@@ -27,7 +27,7 @@ public class BaseDao {
     public void openConnection() {
         String driver = "com.mysql.cj.jdbc.Driver";
 
-        String url = "jdbc:mysql://localhost:3306/mysql?serverTimezone=GMT&useSSL=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://localhost:3306/fumolu?serverTimezone=GMT&useSSL=true&characterEncoding=utf-8";
         String user = "root";
         String password = "123456";
         try {
