@@ -8,10 +8,10 @@ import java.util.List;
 public class Profession {
     // 职业名
   private  String professionName;
-    // 物理攻击成长
-  private  int pyhsicaAttackGrow;
-  //魔法
-  private int magicAttackGrow;
+
+    // 攻击成长
+  private  int attackGrow;
+
     // 防御力成长
   private  int defenseGrow;
 
