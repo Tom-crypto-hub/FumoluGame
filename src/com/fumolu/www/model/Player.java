@@ -16,16 +16,18 @@ public class Player extends Character {
     // 职业
     private Profession profession;
 
-    public Player(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills, String username, String password, Profession profession) {
-        super(characterName, level, exp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, skills);
+
+
+    public Player(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills, int maxExp, String username, String password, Profession profession) {
+        super(characterName, level, exp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, skills, maxExp);
         this.username = username;
         this.password = password;
         this.profession = profession;
     }
 
-    // 根据等级去初始化角色信息
+// 根据等级去初始化角色信息
 //    public Enemy(String characterName, int level){
-//        super();
+////       super();
 //    }
 
     public String getUsername() {

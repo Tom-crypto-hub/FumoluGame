@@ -5,9 +5,9 @@ package com.fumolu.www.model;
 public class Npc {
     // npc的名字
   private  String npcName;
-
     // npc的对白
-  private  String dialogue;
+    private  String[] dialogue;
+
 
     public String getNpcName() {
         return npcName;
@@ -17,11 +17,5 @@ public class Npc {
         this.npcName = npcName;
     }
 
-    public String getDialogue() {
-        return dialogue;
-    }
 
-    public void setDialogue(String dialogue) {
-        this.dialogue = dialogue;
-    }
 }

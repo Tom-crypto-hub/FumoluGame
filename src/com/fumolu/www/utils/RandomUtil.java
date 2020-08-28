@@ -17,4 +17,6 @@ public class RandomUtil {
         int num = random.nextInt(100) + 1;
         return rate >= num;
     }
+
+
 }

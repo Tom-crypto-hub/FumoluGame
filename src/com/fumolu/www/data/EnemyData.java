@@ -7,7 +7,7 @@ public class EnemyData {
 
     static{
 
-        enemys[0][0] = new Enemy("小黄鸡", 5, 5, 3, 0, 20);
+        enemys[0][0] = new Enemy("小黄鸡", 5, 5, 3, 0, 20，);
         enemys[0][1] = new Enemy("野猪", 8, 5, 5, 2, 30);
         enemys[0][2] = new Enemy("狼王", 15, 15, 15, 2, 50);
 
