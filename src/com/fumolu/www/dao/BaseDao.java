@@ -62,17 +62,17 @@ public class BaseDao {
     }
 
     // 添加信息
-    public void insert(){
-
+    public Object insert(){
+        return null;
     }
 
-    public void update(){
-
+    public Object update(){
+        return null;
     }
 
     // 查询
-    public void inquiry(){
-
+    public Object inquiry(){
+        return null;
     }
 
 }
