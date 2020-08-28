@@ -10,6 +10,8 @@ import java.util.List;
  * @createDate: 2020-08-28 16:10
  */
 public class Character {
+    // ID属性
+    private int ID;
     // 昵称
     private String characterName;
 
@@ -23,13 +25,13 @@ public class Character {
     private int money;
 
     // 物理攻击力
-    private int pyhsicalAttack;
+    private int physicalAttack;
 
     // 魔法攻击
     private int magicAttack;
 
     // 物理防御力
-    private int pyhsicalDefense;
+    private int physicalDefense;
 
     // 魔法防御
     private int magicDefense;
@@ -61,14 +63,15 @@ public class Character {
     // 掌握技能
     private List<Skill> skills  = new ArrayList<>();
 
-    public Character(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills) {
+    public Character(int ID, String characterName, int level, int exp, int money, int physicalAttack, int magicAttack, int physicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills) {
+        this.ID = ID;
         this.characterName = characterName;
         this.level = level;
         this.exp = exp;
         this.money = money;
-        this.pyhsicalAttack = pyhsicalAttack;
+        this.physicalAttack = physicalAttack;
         this.magicAttack = magicAttack;
-        this.pyhsicalDefense = pyhsicalDefense;
+        this.physicalDefense = physicalDefense;
         this.magicDefense = magicDefense;
         this.hp = hp;
         this.maxHp = maxHp;
@@ -79,6 +82,14 @@ public class Character {
         this.critRite = critRite;
         this.maxCritRite = maxCritRite;
         this.skills = skills;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public String getCharacterName() {
@@ -161,12 +172,12 @@ public class Character {
         this.skills = skills;
     }
 
-    public int getPyhsicalAttack() {
-        return pyhsicalAttack;
+    public int getPhysicalAttack() {
+        return physicalAttack;
     }
 
-    public void setPyhsicalAttack(int pyhsicalAttack) {
-        this.pyhsicalAttack = pyhsicalAttack;
+    public void setPhysicalAttack(int physicalAttack) {
+        this.physicalAttack = physicalAttack;
     }
 
     public int getMagicAttack() {
@@ -177,12 +188,12 @@ public class Character {
         this.magicAttack = magicAttack;
     }
 
-    public int getPyhsicalDefense() {
-        return pyhsicalDefense;
+    public int getPhysicalDefense() {
+        return physicalDefense;
     }
 
-    public void setPyhsicalDefense(int pyhsicalDefense) {
-        this.pyhsicalDefense = pyhsicalDefense;
+    public void setPhysicalDefense(int physicalDefense) {
+        this.physicalDefense = physicalDefense;
     }
 
     public int getMagicDefense() {
