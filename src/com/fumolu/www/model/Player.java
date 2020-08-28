@@ -23,11 +23,6 @@ public class Player extends Character {
         this.profession = profession;
     }
 
-    // 根据等级去初始化角色信息
-//    public Enemy(String characterName, int level){
-//        super();
-//    }
-
     public String getUsername() {
         return username;
     }
