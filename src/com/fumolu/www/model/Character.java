@@ -18,7 +18,8 @@ public class Character {
 
     // 经验
     private int exp;
-
+    //最大经验值
+    private int maxExp;
     // 金钱
     private int money;
 
@@ -61,7 +62,12 @@ public class Character {
     // 掌握技能
     private List<Skill> skills  = new ArrayList<>();
 
-    public Character(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills) {
+    public Character(String characterName, int level) {
+        this.characterName = characterName;
+        this.level = level;
+    }
+
+    public Character(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills, int maxExp) {
         this.characterName = characterName;
         this.level = level;
         this.exp = exp;
@@ -79,6 +85,15 @@ public class Character {
         this.critRite = critRite;
         this.maxCritRite = maxCritRite;
         this.skills = skills;
+        this.maxExp=maxExp;
+    }
+
+    public int getMaxExp() {
+        return maxExp;
+    }
+
+    public void setMaxExp(int maxExp) {
+        this.maxExp = maxExp;
     }
 
     public String getCharacterName() {
@@ -216,4 +231,5 @@ public class Character {
     public void setMaxCritRite(int maxCritRite) {
         this.maxCritRite = maxCritRite;
     }
+
 }
