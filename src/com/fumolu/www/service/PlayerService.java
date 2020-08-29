@@ -228,7 +228,7 @@ public class PlayerService {
      */
     private static void levelUp(Player player) {
         ProfessionDao professionDao = new ProfessionDao();
-        Profession profession = professionDao.inquiry(player.getUserID());
+        Profession profession = professionDao.inquiry(player.getProfession().getID());
         player.setMaxExp(player.getMaxExp()*2);
         player.setHp(player.getHp() + profession.getHpGrow());
         player.setMagicAttack(player.getMagicAttack() + profession.getMagicAttackGrow());

@@ -60,7 +60,7 @@ public class Character {
     // 暴击率
     private int critRate;
 
-    // 暴击率
+    // 最大暴击率
     private int maxCritRate;
 
     // 速度

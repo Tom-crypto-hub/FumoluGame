@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c5cdceb6-1422-40d0-b5f5-348f21e8473c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/utils/RandomUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/utils/RandomUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/utils/RoleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/utils/RoleUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +90,14 @@
       <workItem from="1598636603500" duration="25000" />
       <workItem from="1598659491204" duration="778000" />
     </task>
+    <task id="LOCAL-00001" summary="14:41">
+      <created>1598683281528</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598683281528</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +105,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zt" />
-    <option name="LAST_COMMIT_MESSAGE" value="zt" />
+    <MESSAGE value="14:41" />
+    <option name="LAST_COMMIT_MESSAGE" value="14:41" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1598659966813">
@@ -100,10 +114,14 @@
     </state>
     <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598659966813" />
     <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598613635211" />
-    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1598615087976">
+    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1598698366386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598615087976" />
+    <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598698366386" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1598698362973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598698362973" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1598659533089">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -112,6 +130,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1598626332356" />
+    <state x="455" y="215" key="git4idea.merge.GitPullDialog" timestamp="1598683312405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="455" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1598683312405" />
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />
