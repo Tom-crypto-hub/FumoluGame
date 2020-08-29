@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
 //            request.getSession().setAttribute("player", player);
             // 显示首页
             request.getRequestDispatcher("/change.jsp").forward(request, response);
-//            response.sendRedirect("/change.jsp");
+//            response.sendRedirect("/change.jsp")  ;
         }else {
             response.setCharacterEncoding("GBK");
             PrintWriter out = response.getWriter();

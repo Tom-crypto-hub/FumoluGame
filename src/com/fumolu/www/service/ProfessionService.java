@@ -23,7 +23,6 @@ public class ProfessionService {
             // 让每个职业以“序号.职业名”的方式输出显示
             System.out.println((i + 1) + "." + ProfessionData.professions[i].getProfessionName());
         }
-
         Profession profession = null;
 
         // 让玩家根据数字做出选择，输入有误可以重复选择
