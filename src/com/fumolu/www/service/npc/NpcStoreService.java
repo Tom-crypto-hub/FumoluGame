@@ -24,21 +24,30 @@ public class NpcStoreService extends AbstractNpcService {
     }
 
     /**
-     * 支付金币购买道具，恢复玩家生命值和法力值
+     * 支付金币购买道具，增加玩家攻击力
      * @param player
      */
     @Override
     public void helpPlayer(Player player) {
-        //判断玩家金币是否足够
+        //判断玩家职业
         //支付500金币恢复500生命值和500法力值
         if (player.getMoney()<500){
             System.out.println("您的金币不足");
-        }else{
+        }else if (player.getProfession().equals("剑士")){
             //玩家金币扣500
             player.setMoney(player.getMoney()-500);
-            //玩家生命值和法力值恢复500
-            player.setHp(player.getHp()+500);
-            player.setMana(player.getMana()+500);
+            //玩家物理攻击力加10，护甲和魔抗加10
+            player.setPhysicalAttack(player.getPhysicalAttack()+10);
+            player.setPhysicalDefense(player.getPhysicalDefense()+10);
+            player.setMagicDefense(player.getMagicDefense()+10);
+            System.out.println("购买成功！");
+        }if (player.getProfession().equals("术士")){
+            //玩家金币扣500
+            player.setMoney(player.getMoney()-500);
+            //玩家魔法攻击力加10，护甲和魔抗加10
+            player.setMagicAttack(player.getMagicAttack()+10);
+            player.setMagicDefense(player.getMagicDefense()+10);
+            player.setPhysicalDefense(player.getPhysicalDefense()+10);
             System.out.println("购买成功！");
         }
 
