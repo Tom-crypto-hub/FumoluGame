@@ -30,6 +30,7 @@ public class NpcDoctorService extends AbstractNpcService {
             player.setMoney(player.getMoney()-300);
             //玩家生命值和法力值恢复500
             player.setHp(player.getHp()+500);
+            System.out.println("治疗成功！");
         }
     }
 }

@@ -42,6 +42,7 @@ public class NpcMasterService extends AbstractNpcService {
         }else{
             player.setMoney(player.getMoney()-skill.getSkillMoney());
             list.add(skill);
+            System.out.println("恭喜您成功学会技能："+skill.getSkillName());
         }
     }
 }

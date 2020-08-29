@@ -39,6 +39,7 @@ public class NpcStoreService extends AbstractNpcService {
             //玩家生命值和法力值恢复500
             player.setHp(player.getHp()+500);
             player.setMana(player.getMana()+500);
+            System.out.println("购买成功！");
         }
 
     }
