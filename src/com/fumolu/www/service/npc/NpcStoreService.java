@@ -24,7 +24,7 @@ public class NpcStoreService extends AbstractNpcService {
     }
 
     /**
-     * 支付金币购买道具，增加玩家攻击力
+     * 支付金币购买道具，增加玩家属性
      * @param player
      */
     @Override
@@ -36,7 +36,9 @@ public class NpcStoreService extends AbstractNpcService {
         }else if (player.getProfession().equals("剑士")){
             //玩家金币扣500
             player.setMoney(player.getMoney()-500);
-            //玩家物理攻击力加10，护甲和魔抗加10
+            //玩家生命值上限加和法力值上限加100，物理攻击力加10，护甲和魔抗加10
+            player.setMaxHp(player.getMaxHp()+100);
+            player.setMaxMana(player.getMaxMana()+100);
             player.setPhysicalAttack(player.getPhysicalAttack()+10);
             player.setPhysicalDefense(player.getPhysicalDefense()+10);
             player.setMagicDefense(player.getMagicDefense()+10);
@@ -44,7 +46,9 @@ public class NpcStoreService extends AbstractNpcService {
         }if (player.getProfession().equals("术士")){
             //玩家金币扣500
             player.setMoney(player.getMoney()-500);
-            //玩家魔法攻击力加10，护甲和魔抗加10
+            //玩家生命值上限加和法力值上限加100，魔法攻击力加10，护甲和魔抗加10
+            player.setMaxHp(player.getMaxHp()+100);
+            player.setMaxMana(player.getMaxMana()+100);
             player.setMagicAttack(player.getMagicAttack()+10);
             player.setMagicDefense(player.getMagicDefense()+10);
             player.setPhysicalDefense(player.getPhysicalDefense()+10);
