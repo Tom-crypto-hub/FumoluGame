@@ -55,6 +55,25 @@ public class PlayerDao extends BaseDao {
         return result;
     }
 
+    public Integer inquiryCharacterID(String username){
+        String sql = "select c_id from character where characterName=" + username;
+        int result = -1;
+        openConnection();
+        try{
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                result = rs.getInt("c_id");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }finally {
+            closeConnection();
+        }
+        return result;
+    }
+
     // 玩家登陆
     public Player inquiry(String username){
         String sql = "SELECT * FROM `user`, `character`,profession where user.c_id=`character`.c_id and user.p_id=profession.p_id and user.username="+username;
@@ -110,10 +129,31 @@ public class PlayerDao extends BaseDao {
         return player;
     }
 
+    public Integer insert(String username){
+        int result = -1;
+        try {
+            openConnection();
+            //操作相对应表的sql语句
+            String sql = "insert into character (characterName) values(?)";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+            result = ps.executeUpdate();
+        }
+        catch(SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection();
+        }
+        return result;
+    }
+
     // 玩家数据的更新
     public Boolean update(Player player){
         int n = -1;
         String sql = "update `user`, `character` set " +
+                "`user.p_id`=" + player.getProfession().getID() +
+                "`characterName`=" + player.getCharacterName() +
                 "`level`=" + player.getLevel() +
                 ", exp=" + player.getExp() +
                 ", maxExp=" + player.getMaxExp() +
