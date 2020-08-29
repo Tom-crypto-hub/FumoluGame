@@ -5,14 +5,13 @@ import com.fumolu.www.model.Place;
 import com.fumolu.www.utils.ScannerUtil;
 
 public class EnemyService {
-     new
 
     /**
      * 选择敌人
      * @param place
      * @return
      */
-    public static Enemy choiceEnemy(Place place) {
+    public static Enemy[] choiceEnemy(Place place) {
         // 1.从传入的场景place中拿到场景中有的敌人
         // 2.显示全部场景中的敌人
         Enemy[] enemies=place.getEnemys();

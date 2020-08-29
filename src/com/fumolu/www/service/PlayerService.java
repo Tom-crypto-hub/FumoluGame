@@ -174,7 +174,11 @@ public class PlayerService {
     }
 
     private static int defence(Enemy enemy){
-        enemy.
+//        enemy.
+
+
+
+        return 0;
     }
 
 }
