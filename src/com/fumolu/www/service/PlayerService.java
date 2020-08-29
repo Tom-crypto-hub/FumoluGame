@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class PlayerService {
     // 登陆的一个逻辑，通过实例化一个PlayerDao
     // 去查询用户名是否存在，用户名和密码是否正确
-    public static boolean login(String username, String password){
-        return false;
+    public static Player login(String username, String password){
+        return null;
     }
 
     // 注册的一个逻辑，通过实例化PlayerDao 去判断
