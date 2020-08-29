@@ -13,6 +13,9 @@ public class Place {
     // 区域敌人
     private Enemy enemys[] = new Enemy[10];
 
+    public Place() {
+    }
+
     public Place(String placeName, String placeIntroduction) {
         this.placeName = placeName;
         this.placeIntroduction = placeIntroduction;
