@@ -10,19 +10,38 @@
     <div class="logins">
         <div class="login">
             <p>登录</p>
-            <div class="userName">
+            <div class="userName" >
                 <span>登录名：</span>
-                <input type="text" placeholder="请输入用户名">
+                <input type="text" placeholder="请输入用户名" id="username">
             </div>
-            <div class="password">
+            <div class="password" >
                 <span>密码：</span>
-                <input type="text" placeholder="请输入登录密码">
+                <input type="text" placeholder="请输入登录密码" id="password">
             </div>
-            <button type="button">登录</button>
+            <button type="button" onclick="login_submit()">登录</button>
             <button type="button">注册</button>
         </div>
     </div>
 
 </div>
+
+<script>
+    /**
+     * 登录信息的输入判断和提交
+     */
+    function login_submit() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(username === ""){
+            alert("登录名不能为空！");
+        }
+        else if(password === ""){
+            alert("密码不能为空！");
+        }
+        else {
+            document.form_login.submit();
+        }
+    }
+</script>
 </body>
 </html>
