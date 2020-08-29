@@ -69,6 +69,9 @@ public class PlayerService {
             case FIGHT_PYHSICAL_ATTACK:
                 physicalAttack(player);
                 break;
+            case FIGHT_CURE:
+                cure(player);
+
 
         }
         // 如果状态是ERROR的话直接退出
@@ -172,13 +175,19 @@ public class PlayerService {
         }
 
     }
-
+//防御
     private static int defence(Enemy enemy){
 //        enemy.
 
 
 
         return 0;
+    }
+//治疗
+    private static void cure(Player player){
+        player.setHp(player.getHp() + (player.getHp()/2));
+        if (player.getHp() > player.getMaxHp())
+            player.setHp(player.getMaxHp());
     }
 
 }
