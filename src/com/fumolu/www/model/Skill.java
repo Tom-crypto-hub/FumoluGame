@@ -14,7 +14,7 @@ public class Skill {
   private  int skillMoney;
 
     // 技能攻击加成
-  private  int attackAddition;
+    private  int attackAddition;
 
     // 技能描述
   private  String skillInstruction;
