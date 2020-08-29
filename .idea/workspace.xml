@@ -2,89 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5cdceb6-1422-40d0-b5f5-348f21e8473c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/heal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/learn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/occupation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/regester.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/skill.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/heal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/bg-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/fight.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/h-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/heal-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/heal.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/learn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/loginBG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/magician.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/regestBG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/s-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/swordsman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/wan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/yu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/learn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/occupation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/regester.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/skill.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlaceDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlayerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/ProfessionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/SkillDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/EnemyData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/FightStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/NpcData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/PlaceData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/ProfessionData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/SkillData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Character.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Enemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Npc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Profession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Skill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/EnemyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/ProfessionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/AbstractNpcService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcDoctorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcMasterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcStoreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RandomUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/ScannerUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/controller/RegisteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/regester.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/regester.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +30,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gimpyvb96txpctaOZopxhURSUi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,17 +58,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BaseDao" />
@@ -165,6 +79,14 @@
       <workItem from="1598636603500" duration="25000" />
       <workItem from="1598659491204" duration="778000" />
     </task>
+    <task id="LOCAL-00001" summary="wj">
+      <created>1598673006330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598673006330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zt" />
-    <option name="LAST_COMMIT_MESSAGE" value="zt" />
+    <MESSAGE value="wj" />
+    <option name="LAST_COMMIT_MESSAGE" value="wj" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1598659966813">
@@ -180,10 +103,23 @@
     </state>
     <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598659966813" />
     <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598613635211" />
-    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1598615087976">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="342" y="0" key="CommitChangelistDialog2" timestamp="1598673005079">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="342" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598673005079" />
     <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598615087976" />
+    <state x="129" y="59" key="MergeDialog" timestamp="1598673082605">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="129" y="59" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1598673082605" />
+    <state x="383" y="89" key="MultipleFileMergeDialog" timestamp="1598673082615">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="383" y="89" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1598673082615" />
+    <state x="275" y="113" key="Vcs.Push.Dialog.v2" timestamp="1598673273281">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="113" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598673273281" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1598659533089">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -192,6 +128,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1598626332356" />
+    <state x="346" y="156" key="git4idea.merge.GitPullDialog" timestamp="1598673036084">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1598673036084" />
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />

@@ -14,7 +14,7 @@ import java.io.IOException;
  * @createDate: 2020-08-29 11:46
  */
 @WebServlet(name = "RegisteServlet")
-public class RegisteServlet extends HttpServlet {
+public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

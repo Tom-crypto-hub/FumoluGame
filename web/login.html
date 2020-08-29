@@ -10,16 +10,18 @@
     <div class="logins">
         <div class="login">
             <p>登录</p>
-            <div class="userName" >
-                <span>登录名：</span>
-                <input type="text" placeholder="请输入用户名" id="username">
-            </div>
-            <div class="password" >
-                <span>密码：</span>
-                <input type="text" placeholder="请输入登录密码" id="password">
-            </div>
+            <form action="LoginServlet" method="post" name="form_login">
+                <div class="userName" >
+                    <span>登录名：</span>
+                    <input type="text" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="password" >
+                    <span>密码：</span>
+                    <input type="text" placeholder="请输入登录密码" id="password">
+                </div>
+            </form>
             <button type="button" onclick="login_submit()">登录</button>
-            <button type="button">注册</button>
+            <button type="button" onclick="window.location='regester.html'">注册</button>
         </div>
     </div>
 

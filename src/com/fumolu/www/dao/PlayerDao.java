@@ -114,6 +114,7 @@ public class PlayerDao extends BaseDao {
     public Boolean update(Player player){
         int n = -1;
         String sql = "update `user`, `character` set " +
+                "`characterName`=" + player.getCharacterName() +
                 "`level`=" + player.getLevel() +
                 ", exp=" + player.getExp() +
                 ", maxExp=" + player.getMaxExp() +
