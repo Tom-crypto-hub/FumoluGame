@@ -2,6 +2,7 @@ package com.fumolu.www.service;
 
 import com.fumolu.www.model.Enemy;
 import com.fumolu.www.model.Place;
+import com.fumolu.www.utils.RandomUtil;
 import com.fumolu.www.utils.ScannerUtil;
 
 public class EnemyService {
@@ -31,6 +32,9 @@ public class EnemyService {
      * @return 敌人普通攻击造成的伤害
      */
     private static int attack(Enemy enemy) {
-        return 0;
+        if (RandomUtil.isSuccess(enemy.getDodgeRate()))
+            return enemy.getPhysicalAttack()*2;
+        else
+            return enemy.getPhysicalAttack();
     }
 }
