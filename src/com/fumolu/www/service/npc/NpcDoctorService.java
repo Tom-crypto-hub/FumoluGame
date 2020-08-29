@@ -13,7 +13,6 @@ public class NpcDoctorService extends AbstractNpcService {
     public NpcDoctorService() {
         // 给从父类继承的npc对象进行赋值
         this.npc = NpcData.npcDoctor;
-
     }
 
     /**
@@ -22,7 +21,16 @@ public class NpcDoctorService extends AbstractNpcService {
      */
     @Override
     public void helpPlayer(Player player) {
-
+        //判断玩家金币是否足够
+        //支付300金币恢复玩家500生命值
+        if (player.getMoney()<300) {
+            System.out.println("您的金币不足");
+        }else {
+            //玩家金币扣300
+            player.setMoney(player.getMoney()-300);
+            //玩家生命值和法力值恢复500
+            player.setHp(player.getHp()+500);
+        }
     }
 }
 

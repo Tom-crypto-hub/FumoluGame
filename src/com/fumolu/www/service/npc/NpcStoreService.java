@@ -1,6 +1,7 @@
 package com.fumolu.www.service.npc;
 
 import com.fumolu.www.data.NpcData;
+import com.fumolu.www.model.Character;
 import com.fumolu.www.model.Player;
 
 /**
@@ -23,11 +24,22 @@ public class NpcStoreService extends AbstractNpcService {
     }
 
     /**
-     * 支付金币购买增加玩家属性或者增加法力值
+     * 支付金币购买道具，恢复玩家生命值和法力值
      * @param player
      */
     @Override
     public void helpPlayer(Player player) {
+        //判断玩家金币是否足够
+        //支付500金币恢复500生命值和500法力值
+        if (player.getMoney()<500){
+            System.out.println("您的金币不足");
+        }else{
+            //玩家金币扣500
+            player.setMoney(player.getMoney()-500);
+            //玩家生命值和法力值恢复500
+            player.setHp(player.getHp()+500);
+            player.setMana(player.getMana()+500);
+        }
 
     }
 }
