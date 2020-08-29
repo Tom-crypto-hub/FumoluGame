@@ -6,6 +6,5 @@ package com.fumolu.www.dao;
  * @author: 王靖
  * @createDate: 2020-08-28 16:28
  */
-public class PlaceDao {
-
+public class PlaceDao extends BaseDao {
 }

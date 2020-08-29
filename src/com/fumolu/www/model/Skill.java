@@ -4,6 +4,9 @@ package com.fumolu.www.model;
  * 技能
  */
 public class Skill {
+    // ID
+    private int ID;
+
     // 技能名
   private  String SkillName;
 
@@ -18,6 +21,14 @@ public class Skill {
 
     // 释放消耗法力
   private  int mana;
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
     public String getSkillName() {
         return SkillName;
@@ -57,5 +68,17 @@ public class Skill {
 
     public void setMana(int mana) {
         this.mana = mana;
+    }
+
+    @Override
+    public String toString() {
+        return "Skill{" +
+                "ID=" + ID +
+                ", SkillName='" + SkillName + '\'' +
+                ", skillMoney=" + skillMoney +
+                ", attackAddition=" + attackAddition +
+                ", skillInstruction='" + skillInstruction + '\'' +
+                ", mana=" + mana +
+                '}';
     }
 }

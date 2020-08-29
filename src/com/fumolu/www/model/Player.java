@@ -1,5 +1,7 @@
 package com.fumolu.www.model;
 
+import com.sun.xml.internal.bind.v2.model.core.ID;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,26 +9,43 @@ import java.util.List;
  * 玩家
  */
 public class Player extends Character {
+
+    // 玩家ID
+    private int userID;
     // 账号
     private String username;
 
     // 密码
     private String password;
 
-    // 职业
-    private Profession profession;
+    // 头像ID
+    private int img_id;
 
-    public Player(String characterName, int level, int exp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, List<Skill> skills, String username, String password, Profession profession) {
-        super(characterName, level, exp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, skills);
+    public  Player(){}
+
+    public Player(int userID, int ID, String characterName, int level, int exp, int maxExp, int money, int pyhsicalAttack, int magicAttack, int pyhsicalDefense, int magicDefense, int hp, int maxHp, int mana, int maxMana, int dodgeRate, int maxDodgeRate, int critRite, int maxCritRite, int speed, List<Skill> skills, String username, String password, Profession profession, int img_id) {
+        super(ID, characterName, level, exp, maxExp, money, pyhsicalAttack, magicAttack, pyhsicalDefense, magicDefense, hp, maxHp, mana, maxMana, dodgeRate, maxDodgeRate, critRite, maxCritRite, speed, profession, skills);
+        this.userID = userID;
         this.username = username;
         this.password = password;
-        this.profession = profession;
+        this.img_id = img_id;
     }
 
-    // 根据等级去初始化角色信息
-//    public Enemy(String characterName, int level){
-//        super();
-//    }
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
+    public int getImg_id() {
+        return img_id;
+    }
+
+    public void setImg_id(int img_id) {
+        this.img_id = img_id;
+    }
 
     public String getUsername() {
         return username;
@@ -42,13 +61,5 @@ public class Player extends Character {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public Profession getProfession() {
-        return profession;
-    }
-
-    public void setProfession(Profession profession) {
-        this.profession = profession;
     }
 }
