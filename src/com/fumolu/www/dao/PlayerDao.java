@@ -37,12 +37,13 @@ public class PlayerDao extends BaseDao {
         try {
             openConnection();
             //操作相对应表的sql语句
-            String sql = "insert into user(username, password,  p_id, c_id) values(?,?,?,?)";
+            String sql = "insert into user(username, password,  p_id, c_id, img_id) values(?,?,?,?.?)";
             ps = conn.prepareStatement(sql);
             ps.setString(1, player.getUsername());
             ps.setString(2, player.getPassword());
             ps.setInt(3, player.getProfession().getID());
             ps.setInt(4, player.getID());
+            ps.setInt(5, player.getImg_id());
             result = ps.executeUpdate();
         }
         catch(SQLException e) {
@@ -65,6 +66,8 @@ public class PlayerDao extends BaseDao {
             while(rs.next()) {
                 player = new Player();
                 player.setID(rs.getInt("c_id"));
+                player.setUserID(rs.getInt("u_id"));
+                player.setImg_id(rs.getInt("img_id"));
                 player.setCharacterName(rs.getString("characterName"));
                 player.setLevel(rs.getInt("level"));
                 player.setExp(rs.getInt("exp"));
