@@ -2,14 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5cdceb6-1422-40d0-b5f5-348f21e8473c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/heal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/learn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/occupation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/regester.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/skill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/heal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fight.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/heal-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/heal.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/learn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/loginBG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/magician.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/regestBG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/swordsman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/wan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/yu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/learn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/occupation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/regester.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/skill.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/ProfessionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/ProfessionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/PlaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/PlaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/BaseDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlaceDao.class" beforeDir="false" />
@@ -46,37 +91,65 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="zh" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1gimpyvb96txpctaOZopxhURSUi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunManager">
+    <configuration name="BaseDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fumolu.www.dao.BaseDao" />
+      <module name="FumoluGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fumolu.www.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Application.BaseDao" />
+        <item itemvalue="Application.BaseDao" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -89,6 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1598605973330</updated>
       <workItem from="1598605974906" duration="6928000" />
+      <workItem from="1598636603500" duration="25000" />
+      <workItem from="1598659491204" duration="778000" />
     </task>
     <servers />
   </component>
@@ -100,21 +175,65 @@
     <option name="LAST_COMMIT_MESSAGE" value="zt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1598669933107">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1598659966813">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598669933107" />
-    <state x="553" y="302" width="429" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598668353314">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="553" y="302" width="429" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1598668353314" />
+    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598659966813" />
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598613635211" />
     <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1598615087976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598615087976" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1598659533089">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598659533089" />
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598626332356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1598626332356" />
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
   </component>
 </project>

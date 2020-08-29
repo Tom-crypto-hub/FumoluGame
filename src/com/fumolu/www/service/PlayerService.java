@@ -9,6 +9,7 @@ import com.fumolu.www.model.Profession;
 import com.fumolu.www.model.Skill;
 import com.fumolu.www.utils.ScannerUtil;
 import com.sun.deploy.net.HttpRequest;
+import com.fumolu.www.utils.RandomUtil;
 
 import java.util.Scanner;
 
@@ -24,7 +25,7 @@ public class PlayerService {
         Player player = playerDao.inquiry(username);
         if (player == null) {
             return null;
-         //判断密码是否匹配，匹配返回true，否则false
+            //判断密码是否匹配，匹配返回true，否则false
         } else if (player.getPassword().equals(password)) {
             return player;
         } else {
@@ -96,17 +97,37 @@ public class PlayerService {
         // 4.返回玩家信息
         return player;
     }
-
     /**
      * 玩家跟敌人战斗
      *
-     * @param player 参与战斗的玩家
-     * @param enemy  挑战的敌人
+     * @param player
+     *            参与战斗的玩家
+     * @param enemy
+     *            挑战的敌人
      */
     public static void fight(Player player, Enemy enemy, FightStatus status) {
         // 传入的是玩家的行为，使用的是
         // 普通攻击还是法术功击，还是防御，还是技能攻击，还是逃跑
+        switch (status){
+            case FIGHT_ERROR:
+                break;
+            case FIGHT_DEFENCE:
+            case FIGHT_RUN_AWAY:
+                break;
+            case FIGHT_MAGIC_ATTACK:
+                magicAttack(player);
+                break;
+            case FIGHT_SKILL_ATTACK:
+                userSkill(player);
+                break;
+            case FIGHT_PYHSICAL_ATTACK:
+                physicalAttack(player);
+                break;
+            case FIGHT_CURE:
+                cure(player);
 
+
+        }
         // 如果状态是ERROR的话直接退出
 
         // 玩家各种行为的处理以及攻击方是否暴击，被攻击方是否闪避
@@ -115,69 +136,113 @@ public class PlayerService {
     }
 
     /**
-     * 玩家选择战斗中的行为,攻击或者释放技能
-     *
-     * @param player 参与战斗的玩家
-     * @return 对敌人造成伤害
-     */
-    private static int action(Player player) {
-
-        // 处理玩家攻击造成的伤害，并返回
-
-        return 0;
-    }
-
-    /**
      * 玩家对敌人进行普通物理攻击
      *
-     * @param player 参与战斗的玩家
+     * @param player
+     *            参与战斗的玩家
      * @return 攻击产生的伤害
      */
     private static int physicalAttack(Player player) {
-        return 0;
+
+        if (RandomUtil.isSuccess(player.getDodgeRate()))
+            return 0;
+        else if (RandomUtil.isSuccess(player.getCritRate())){
+            return player.getPhysicalAttack()*2;
+        }else
+            return player.getPhysicalAttack();
+
     }
 
     /**
      * 玩家对敌人进行普通法术攻击
      *
-     * @param player 参与战斗的玩家
+     * @param player
+     *            参与战斗的玩家
      * @return 攻击产生的伤害
      */
     private static int magicAttack(Player player) {
-        return 0;
+        if (RandomUtil.isSuccess(player.getDodgeRate()))
+            return 0;
+        else if (RandomUtil.isSuccess(player.getCritRate())){
+            return player.getMagicAttack()*2;
+        }else
+            return player.getMagicAttack();
+
     }
 
     /**
      * 战斗胜利后玩家获得金钱奖励，以及经验
      * 升级玩家可以提升属性
      *
-     * @param player 战斗胜利的玩家
-     * @param enemy  被击败的敌人
+     * @param player
+     *            战斗胜利的玩家
+     * @param enemy
+     *            被击败的敌人
      */
     private static void victory(Player player, Enemy enemy) {
+        if (player.getMaxExp()-player.getExp() > enemy.getExp()){
+            player.setExp(player.getExp()+ enemy.getExp());
+            player.setMoney(player.getMoney() + enemy.getMoney());
+        }
+        if (player.getMaxExp()-player.getExp() <= enemy.getExp()){
+            levelUp(player);
+            player.setMoney(player.getMoney() + enemy.getMoney());
 
+        }
 
     }
-
     /**
      * 玩家升级
      *
-     * @param player 要升级的玩家
+     * @param player
+     *            要升级的玩家
      */
     private static void levelUp(Player player) {
-
+        ProfessionDao professionDao = new ProfessionDao();
+        Profession profession = professionDao.inquiry(player.getUserID());
+        player.setMaxExp(player.getMaxExp()*2);
+        player.setHp(player.getHp() + profession.getHpGrow());
+        player.setMagicAttack(player.getMagicAttack() + profession.getMagicAttackGrow());
+        player.setPhysicalAttack(player.getPhysicalAttack() + profession.getPhysicalAttackGrow());
+        player.setPhysicalDefense(player.getPhysicalDefense() + profession.getPhysicalDefenseGrow());
+        player.setMagicDefense(player.getMagicDefense() + profession.getMagicDefenseGrow());
+        player.setMana(player.getMana() + profession.getManaGrow());
 
     }
 
     /**
      * 玩家对敌人释放技能进行攻击
      *
-     * @param player 参与战斗的玩家
+     * @param player
+     *            参与战斗的玩家
      * @return 技能产生的伤害
      */
     private static int userSkill(Player player) {
+        Skill skill = new Skill();
+        if (player.getCharacterName().equals("剑士")){
+            player.setPhysicalAttack(player.getPhysicalAttack()+skill.getAttackAddition());
+            return player.getPhysicalAttack();
+        }
+        else {
+            player.setMagicAttack(player.getMagicAttack()+skill.getAttackAddition());
+            return player.getMagicAttack();
+        }
+
+    }
+    //防御
+    private static int defence(Enemy enemy){
+//        enemy.
+
+
 
         return 0;
     }
+    //治疗
+    private static void cure(Player player){
+        player.setHp(player.getHp() + (player.getHp()/2));
+        if (player.getHp() > player.getMaxHp())
+            player.setHp(player.getMaxHp());
+    }
 
 }
+
