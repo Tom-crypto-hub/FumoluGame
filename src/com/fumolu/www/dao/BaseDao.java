@@ -56,6 +56,7 @@ public class BaseDao {
             if (conn != null) {
                 conn.close();
             }
+            System.out.println("关闭数据库成功");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -33,11 +33,11 @@ public class PlayerDao extends BaseDao {
 
     // 玩家的注册时的插入
     public int insert(Player player) {
+        String sql = "insert into `user`(username, `password`, p_id, c_id, img_id) values(?,?,?,?,?)";
         int result = -1;
         try {
             openConnection();
             //操作相对应表的sql语句
-            String sql = "insert into user(username, password, p_id, c_id, img_id) values(?,?,?,?.?)";
             ps = conn.prepareStatement(sql);
             ps.setString(1, player.getUsername());
             ps.setString(2, player.getPassword());
@@ -56,7 +56,7 @@ public class PlayerDao extends BaseDao {
     }
 
     public Integer inquiryCharacterID(String username){
-        String sql = "select c_id from character where characterName=" + username;
+        String sql = "select c_id from `character` where characterName='" + username+"'";
         int result = -1;
         openConnection();
         try{
@@ -76,7 +76,7 @@ public class PlayerDao extends BaseDao {
 
     // 玩家登陆
     public Player inquiry(String username){
-        String sql = "SELECT * FROM `user`, `character`,profession where user.c_id=`character`.c_id and user.p_id=profession.p_id and user.username="+username;
+        String sql = "SELECT * FROM `user`, `character`,profession where `user`.c_id=`character`.c_id and `user`.p_id=profession.p_id and `user`.username='"+username + "'";
         Player player = null;
         openConnection();
         try{
@@ -101,7 +101,7 @@ public class PlayerDao extends BaseDao {
                 player.setMana(rs.getInt("mana"));
                 player.setMaxMana(rs.getInt("maxMana"));
                 player.setDodgeRate(rs.getInt("dodgeRate"));
-                player.setMaxDodgeRate(rs.getInt("dodgeRate"));
+                player.setMaxDodgeRate(rs.getInt("maxDodgeRate"));
                 player.setCritRate(rs.getInt("critRate"));
                 player.setMaxCritRate(rs.getInt("maxCritRate"));
                 player.setSpeed(rs.getInt("speed"));
@@ -134,7 +134,7 @@ public class PlayerDao extends BaseDao {
         try {
             openConnection();
             //操作相对应表的sql语句
-            String sql = "insert into character (characterName) values(?)";
+            String sql = "insert into `character`(characterName) values(?)";
             ps = conn.prepareStatement(sql);
             ps.setString(1, username);
             result = ps.executeUpdate();
@@ -152,8 +152,6 @@ public class PlayerDao extends BaseDao {
     public Boolean update(Player player){
         int n = -1;
         String sql = "update `user`, `character` set " +
-                "`user.p_id`=" + player.getProfession().getID() +
-                "`characterName`=" + player.getCharacterName() +
                 "`level`=" + player.getLevel() +
                 ", exp=" + player.getExp() +
                 ", maxExp=" + player.getMaxExp() +
@@ -171,8 +169,8 @@ public class PlayerDao extends BaseDao {
                 ", critRate=" + player.getCritRate() +
                 ", maxCritRate=" + player.getMaxCritRate() +
                 ", speed=" + player.getSpeed() +
-                " where user.c_id=character.c_id " +
-                "and user.username = '" + player.getUsername() + "'";
+                " where `user`.c_id=`character`.c_id " +
+                " and `user`.username = '" + player.getUsername() + "'";
         openConnection();
         try {
             Statement stmt = conn.createStatement();

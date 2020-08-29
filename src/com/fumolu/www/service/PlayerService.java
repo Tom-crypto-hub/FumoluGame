@@ -35,21 +35,23 @@ public class PlayerService {
 
     // 注册的一个逻辑，通过实例化PlayerDao 去判断
     // 账号是否已经存在，添加是否成功
-    public static boolean registe(String username, String password, int img_id) {
+    public static boolean register(String username, String password, int img_id) {
         // 查询用户名是否重复，重复返回false，不重复做用户信息插入
-
-        if (playerDao.inquiry(username)==null){
+        Player p = playerDao.inquiry(username);
+        System.out.println("player is null? + " + (p == null));
+        if (p==null){
             // 插入到character表中一条空的数据
             playerDao.insert(username);
             // 获取到插入之后的一个id
             int id = playerDao.inquiryCharacterID(username);
+            System.out.println("玩家数据信息ID：" + id);
             // 初始化用户数据
             Player player = new Player();
             player.setID(id);
             player.setUsername(username);
             player.setPassword(password);
             Profession profession = new Profession();
-            profession.setID(1);
+            profession.setID(0);
             player.setProfession(profession);
             player.setImg_id(img_id);
             //插入用户信息
@@ -60,12 +62,6 @@ public class PlayerService {
         }
         // 通过ProfessionDao 插入player 的基础属性
     }
-//
-//    public static Player initPlayer(){
-//        Player player = new Player();
-//        player.setCharacterName("");
-//    }
-
 
     /**
      * 初始化玩家角色信息
@@ -95,7 +91,7 @@ public class PlayerService {
             player.setMaxHp(400);
             player.setHp(player.getMaxHp());//初始生命值等于最大生命值
             player.setMaxMana(30);
-            player.setMana(player.getMana());//初始蓝量等于最大蓝量
+            player.setMana(player.getMaxMana());//初始蓝量等于最大蓝量
             player.setDodgeRate(20);
             player.setMaxDodgeRate(60);
             player.setCritRate(20);
@@ -111,7 +107,7 @@ public class PlayerService {
             player.setMaxHp(300);
             player.setHp(player.getMaxHp());//初始生命值等于最大生命值
             player.setMaxMana(80);
-            player.setMana(player.getMana());//初始蓝量等于最大蓝量
+            player.setMana(player.getMaxMana());//初始蓝量等于最大蓝量
             player.setDodgeRate(10);
             player.setMaxDodgeRate(50);
             player.setCritRate(30);
@@ -122,6 +118,8 @@ public class PlayerService {
         player.setProfession(professionDao.inquiry(player.getProfession().getID()));
         // 更改信息
         playerDao.update(player);
+        // 重新读取玩家信息
+        player = playerDao.inquiry(player.getUsername());
         // 4.返回玩家信息
         return player;
     }

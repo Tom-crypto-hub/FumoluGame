@@ -10,22 +10,22 @@
     <div class="re">
         <div class="regest">
             <p>注册</p>
-            <form action="RegisterLogin" method="post" name="form_register">
-            <div class="userName" >
-                <span>用户名：</span>
-                <input type="text" placeholder="请输入用户名" id="username">
-            </div>
-            <div class="password" >
-                <span>密码：</span>
-                <input type="text" placeholder="请输入登录密码" id="password">
-            </div>
-            <div class="password2" >
-                <span>确认密码：</span>
-                <input type="text" placeholder="请输入登录密码" id="repassword">
-            </div>
+            <form action="RegisterServlet" method="post" name="form_register">
+                <div class="userName" >
+                    <span>用户名：</span>
+                    <input type="text" placeholder="请输入用户名" id="username" name="username">
+                </div>
+                <div class="password" >
+                    <span>密码：</span>
+                    <input type="text" placeholder="请输入登录密码" id="password" name="password">
+                </div>
+                <div class="password2" >
+                    <span>确认密码：</span>
+                    <input type="text" placeholder="请输入登录密码" id="repassword" name="repassword">
+                </div>
             </form>
             <button type="button" onclick="register_submit()">注册</button>
-            <button type="button">登录</button>
+            <button type="button" onclick="window.location='login.html'">登录</button>
         </div>
     </div>
 

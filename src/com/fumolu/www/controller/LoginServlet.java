@@ -32,19 +32,18 @@ public class LoginServlet extends HttpServlet {
             // 将玩家账号存入session
             session.setAttribute("loginuser", username);
             session.setAttribute("player", player);
-//            request.getSession().setAttribute("player", player);
+            session.setAttribute("avatar_id", player.getImg_id());
             // 显示首页
-            request.getRequestDispatcher("/change.jsp").forward(request, response);
-//            response.sendRedirect("/change.jsp")  ;
+            response.sendRedirect("/skill.jsp");
+//            request.getRequestDispatcher("/change.jsp").forward(request, response);
         }else {
             response.setCharacterEncoding("GBK");
             PrintWriter out = response.getWriter();
             out.println("<script type='text/javascript'>");
             out.println("alert(" + "\"" + "用户不存在或者密码错误" + "\"" + ")");
-//            System.out.println(Logs.log);
 
             response.setContentType("text/html;charset=utf-8");
-            out.println("open(\"login.jsp\", \"_self\");");//重新打开新的页面, _self在原窗口打开
+            out.println("open(\"login.html\", \"_self\");");//重新打开新的页面, _self在原窗口打开
             out.println("</script>");
             out.close();
         }

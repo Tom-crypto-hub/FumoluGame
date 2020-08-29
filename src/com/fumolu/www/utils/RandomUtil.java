@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class RandomUtil {
 
-    private static Random random = new Random();
+    public static Random random = new Random();
 
     // 是否山闪避成功或者暴击成功
     public static boolean isSuccess(int rate){

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商店</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+<div class="shop">
+    <div class="user">
+        <div class="userContent">
+            <div class="userName">
+                <a href="" class="headPic">
+                    <img src="img/h-1.jpg" alt="">
+                </a>
+                <span class="names" id="panda">pandas</span>
+                <div class="information" id="infor">
+                    <div class="employee">
+                        <span>职业：</span>
+                        <a href="">剑客</a>
+                    </div>
+                    <div class="employee">
+                        <span>等级：</span>
+                        <a href="">12</a>
+                    </div>
+                    <div class="employee">
+                        <span>经验：</span>
+                        <a href="">12000</a>
+                    </div>
+                    <div class="employee">
+                        <span>物理攻击力：</span>
+                        <a href="">500</a>
+                    </div>
+                    <div class="employee">
+                        <span>魔法攻击：</span>
+                        <a href="">5000</a>
+                    </div>
+                    <div class="employee">
+                        <span>物理防御力：</span>
+                        <a href="">50000</a>
+                    </div>
+                    <div class="employee">
+                        <span>魔法防御：</span>
+                        <a href="">50000</a>
+                    </div>
+                    <div class="employee">
+                        <span>血量：</span>
+                        <a href="">500</a>
+                        <span>/</span>
+                        <a href="">5000</a>
+                    </div>
+                    <div class="employee">
+                        <span>法力：</span>
+                        <a href="">500</a>
+                        <span>/</span>
+                        <a href="">5000</a>
+                    </div>
+                    <div class="employee">
+                        <span>暴击率：</span>
+                        <a href="">500</a>
+                        <span>/</span>
+                        <a href="">5000</a>
+                    </div>
+                    <div class="employee">
+                        <span>掌握技能：</span>
+                        <a href="">御剑术</a>
+                        <span>、</span>
+                        <a href="">万剑术</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentLeft">
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-2.png" alt="">
+                </a>
+                <a href="" class="pingWord">昆凌伞</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-3.png" alt="">
+                </a>
+                <a href="" class="pingWord">武功秘籍</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-4.png" alt="">
+                </a>
+                <a href="" class="pingWord">起死回生水</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-6.png" alt="">
+                </a>
+                <a href="" class="pingWord">乾坤袋</a>
+            </div>
+        </div>
+        <div class="contentRight">
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-1.png" alt="">
+                </a>
+                <a href="" class="pingWord">疗伤粉</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-2.png" alt="">
+                </a>
+                <a href="" class="pingWord">昆凌伞</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-3.png" alt="">
+                </a>
+                <a href="" class="pingWord">葵花宝典</a>
+            </div>
+            <div class="ping">
+                <a href="" class="pingPic">
+                    <img src="img/s-4.png" alt="">
+                </a>
+                <a href="" class="pingWord">忘情水</a>
+            </div>
+        </div>
+        <div class="return">
+            <a href="skill.html">返回</a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var panda = document.getElementById('panda');
+    var infor = document.getElementById('infor');
+    panda.onmouseover= function () {
+        infor.style.display = 'block';
+    }
+    infor.onmouseleave= function () {
+        infor.style.display = 'none';
+    }
+</script>
+</body>
+</html>
