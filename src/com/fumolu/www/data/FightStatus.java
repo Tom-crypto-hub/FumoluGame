@@ -18,5 +18,7 @@ public enum FightStatus {
     // 逃跑的状态
     FIGHT_RUN_AWAY,
     // 错误的状态
-    FIGHT_ERROR
+    FIGHT_ERROR,
+    // 治疗的状态
+    FIGHT_CURE
 }
