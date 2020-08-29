@@ -2,10 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5cdceb6-1422-40d0-b5f5-348f21e8473c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/RegisteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_8_29_10_10__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/heal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/learn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/occupation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/regester.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/skill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/heal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/bg-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fight.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/h-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/heal-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/heal.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/learn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/loginBG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/magician.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/regestBG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/s-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/swordsman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/wan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/yu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/learn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/occupation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/regester.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/skill.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/BaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlaceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlayerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/ProfessionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/SkillDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/EnemyData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/FightStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/NpcData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/PlaceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/ProfessionData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/SkillData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Npc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Profession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/EnemyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlaceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/ProfessionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/AbstractNpcService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcDoctorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcMasterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcStoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RandomUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/ScannerUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +108,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gimpyvb96txpctaOZopxhURSUi" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,6 +129,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

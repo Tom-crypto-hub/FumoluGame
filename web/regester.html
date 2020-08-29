@@ -10,23 +10,62 @@
     <div class="re">
         <div class="regest">
             <p>注册</p>
-            <div class="userName">
+            <div class="userName" >
                 <span>用户名：</span>
-                <input type="text" placeholder="请输入用户名">
+                <input type="text" placeholder="请输入用户名" id="username">
             </div>
-            <div class="password">
+            <div class="password" >
                 <span>密码：</span>
-                <input type="text" placeholder="请输入登录密码">
+                <input type="text" placeholder="请输入登录密码" id="password">
             </div>
-            <div class="password2">
+            <div class="password2" >
                 <span>确认密码：</span>
-                <input type="text" placeholder="请输入登录密码">
+                <input type="text" placeholder="请输入登录密码" id="repassword">
             </div>
-            <button type="button">注册</button>
+            <button type="button" onclick="register_submit()">注册</button>
             <button type="button">登录</button>
         </div>
     </div>
 
 </div>
+
+<script>
+    /**
+     * 注册的输入判断和信息提交
+     * @returns {boolean}
+     */
+    function register_submit() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var repassword = document.getElementById("repassword").value;
+
+        // 正则
+        const reg = new RegExp(/^(?![^a-zA-Z]+$)(?!\D+$)/);
+        if(username == "" || username == null){
+            alert("登录名不能为空！");
+            return false;
+        }
+        else if(password == "" || password == null){
+            alert("密码不能为空！");
+            return false;
+        }
+        else if(password.length < 6){
+            alert("密码长度必须大于等于6位！");
+            return false;
+        }
+        else if(!reg.test(password)){
+            alert("密码至少包含一位数字和一位字母！");
+            return false;
+        }
+        else if(repassword !== password){
+            alert("确认密码必须和密码保持一致！");
+            return false;
+        }
+        else {
+            document.form_register.submit();
+            return true;
+        }
+    }
+</script>
 </body>
 </html>
