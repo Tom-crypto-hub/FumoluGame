@@ -37,7 +37,7 @@ public class PlayerDao extends BaseDao {
         try {
             openConnection();
             //操作相对应表的sql语句
-            String sql = "insert into user(username, password,  p_id, c_id, img_id) values(?,?,?,?.?)";
+            String sql = "insert into user(username, password, p_id, c_id, img_id) values(?,?,?,?.?)";
             ps = conn.prepareStatement(sql);
             ps.setString(1, player.getUsername());
             ps.setString(2, player.getPassword());
