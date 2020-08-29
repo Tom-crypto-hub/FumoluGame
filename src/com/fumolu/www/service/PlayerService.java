@@ -79,24 +79,53 @@ public class PlayerService {
 //        初始化player父类的所有属性
         Player player = playerDao.inquiry(username);
         player.getProfession().setID(professionId);
-        // 设置所有的属性值
+        // 设置两种职业的相同属性值
         player.setCharacterName(username);
+        player.setLevel(1);
+        player.setExp(0);
+        player.setMaxExp(200);
+        player.setMoney(1000);
+        //两种职业的不同属性值
         if(professionId == 0){
-            player.setCritRate();
             // 指代剑客
+            player.setPhysicalAttack(100);
+            player.setPhysicalDefense(50);
+            player.setMagicAttack(20);
+            player.setMagicDefense(40);
+            player.setMaxHp(400);
+            player.setHp(player.getMaxHp());//初始生命值等于最大生命值
+            player.setMaxMana(30);
+            player.setMana(player.getMana());//初始蓝量等于最大蓝量
+            player.setDodgeRate(20);
+            player.setMaxDodgeRate(60);
+            player.setCritRate(20);
+            player.setMaxCritRate(60);
+            player.setSpeed(20);
         }
         else if(professionId == 1){
             // 指代术士
-
+            player.setPhysicalAttack(20);
+            player.setPhysicalDefense(20);
+            player.setMagicAttack(200);
+            player.setMagicDefense(20);
+            player.setMaxHp(300);
+            player.setHp(player.getMaxHp());//初始生命值等于最大生命值
+            player.setMaxMana(80);
+            player.setMana(player.getMana());//初始蓝量等于最大蓝量
+            player.setDodgeRate(10);
+            player.setMaxDodgeRate(50);
+            player.setCritRate(30);
+            player.setMaxCritRate(80);
+            player.setSpeed(15);
         }
         // 设置玩家的职业属性
         player.setProfession(professionDao.inquiry(player.getProfession().getID()));
-
         // 更改信息
         playerDao.update(player);
         // 4.返回玩家信息
         return player;
     }
+
     /**
      * 玩家跟敌人战斗
      *
