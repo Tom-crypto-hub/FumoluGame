@@ -5,7 +5,7 @@ import java.util.List;
 public class Enemy extends Character {
 
     // 敌人ID
-    public int enemy_id;
+    private int enemy_id;
 
     public Enemy(){}
 
@@ -20,5 +20,12 @@ public class Enemy extends Character {
 
     public void setEnemy_id(int enemy_id) {
         this.enemy_id = enemy_id;
+    }
+
+    @Override
+    public String toString() {
+        return "Enemy{" +
+                "enemy_id=" + enemy_id +
+                '}';
     }
 }

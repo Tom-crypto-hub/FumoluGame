@@ -33,6 +33,8 @@ public class ProfessionDao extends BaseDao {
             } catch (SQLException e) {
                 e.printStackTrace();
                 System.out.println(e.getMessage());
+            }finally {
+                closeConnection();
             }
             return profession;
     }

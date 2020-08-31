@@ -2,8 +2,12 @@ package com.fumolu.www.dao;
 
 import com.fumolu.www.model.Enemy;
 import com.fumolu.www.model.Profession;
+import com.fumolu.www.model.Skill;
 
+import java.nio.channels.SelectionKey;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ClassName: EnemyDao
@@ -17,8 +21,8 @@ public class EnemyDao extends BaseDao {
 //        System.out.println(new EnemyDao().inquiry(1).toString());
 //    }
 
-    public Enemy inquiry(int index) {
-        String sql = "SELECT * FROM `enemy`, skill, `character`,profession where enemy.c_id=`character`.c_id and enemy.skill_id=skill.skill_id and skill.p_id=profession.p_id and enemy.id="+index;
+    public Enemy inquiryEnemy(int index) {
+        String sql = "SELECT * FROM `character` where `character`.c_id="+index;
         Enemy enemy = new Enemy();
         openConnection();
         try{
@@ -45,25 +49,41 @@ public class EnemyDao extends BaseDao {
                 enemy.setCritRate(rs.getInt("critRate"));
                 enemy.setMaxCritRate(rs.getInt("maxCritRate"));
                 enemy.setSpeed(rs.getInt("speed"));
-
-                Profession profession = new Profession();
-                profession.setID(rs.getInt("p_id"));
-                profession.setProfessionName(rs.getString("professionName"));
-                profession.setPhysicalAttackGrow(rs.getInt("physicalAttackGrow"));
-                profession.setMagicAttackGrow(rs.getInt("magicAttackGrow"));
-                profession.setPhysicalDefenseGrow(rs.getInt("physicalDefenseGrow"));
-                profession.setMagicDefenseGrow(rs.getInt("magicDefenseGrow"));
-                profession.setHpGrow(rs.getInt("hpGrow"));
-                profession.setManaGrow(rs.getInt("manaGrow"));
-
-                enemy.setProfession(profession);
             }
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
+        }finally {
+            closeConnection();
         }
         return enemy;
     }
 
+    public List<Skill> inqueryEnemySkill(int enemyID){
+        String sql = "SELECT * FROM `enemy`, skill where enemy.skill_id=skill.skill_id and enemy.c_id=" + enemyID;
+        List<Skill> list = new ArrayList<>();
+        openConnection();
+        try{
+            Skill skill = null;
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                skill = new Skill();
+                skill.setID(rs.getInt("skill_id"));
+                skill.setSkillName(rs.getString("skillName"));
+                skill.setSkillMoney(rs.getInt("skillMoney"));
+                skill.setAttackAddition(rs.getInt("attackAddition"));
+                skill.setSkillInstruction(rs.getString("skillInstruction"));
+                skill.setMana(rs.getInt("mana"));
+                list.add(skill);
+            }
+        }catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }finally {
+            closeConnection();
+        }
+        return list;
+    }
 
 }

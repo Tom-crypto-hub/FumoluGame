@@ -86,10 +86,10 @@
             </a>
         </div>
         <div class="words">
-            <p>你已经疗伤完成啦！！哈哈哈哈~~~</p>
+            <p><%=(String)request.getSession(true).getAttribute("healMsg")%></p>
         </div>
         <div class="return">
-            <a href="skill.html">返回</a>
+            <a href="skill.jsp">返回</a>
         </div>
     </div>
 </div>

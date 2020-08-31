@@ -17,6 +17,7 @@ public class RandomUtil {
         int num = random.nextInt(100) + 1;
         return rate >= num;
     }
+
     //根据玩家随机敌人等级
     public static int getEnemyLevel(int playerLevel){
         // 获取随机数

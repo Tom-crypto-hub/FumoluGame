@@ -1,9 +1,7 @@
 package com.fumolu.www.service;
 
 import com.fumolu.www.dao.ProfessionDao;
-import com.fumolu.www.data.ProfessionData;
 import com.fumolu.www.model.Profession;
-import com.fumolu.www.utils.ScannerUtil;
 
 /**
  * 跟职业相关的功能

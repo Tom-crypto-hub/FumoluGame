@@ -1,33 +1,40 @@
 package com.fumolu.www.service;
 
-import com.fumolu.www.dao.PlaceDao;
-import com.fumolu.www.dao.PlayerDao;
-import com.fumolu.www.data.PlaceData;
+import com.fumolu.www.dao.EnemyDao;
+import com.fumolu.www.dao.ProfessionDao;
+import com.fumolu.www.model.Enemy;
 import com.fumolu.www.model.Place;
-import com.fumolu.www.utils.ScannerUtil;
+
+import java.util.ArrayList;
 
 /**
  * 跟场景相关的方法
  */
 public class PlaceService {
+    private static EnemyDao enemyDao = new EnemyDao();
+    private static ProfessionDao professionDao = new ProfessionDao();
+
     /**
      * 选择场景
      *
      * @return 返回玩家选中的场景
      */
-    public static Place choicePlace(int playceId) {
+    public static Place choicePlace(int placeId) {
         // 1.定义一个场景对象以便后面返回
-        Place place = new Place();
+        Place place = null;
         // 2.让玩家根据数字做出选择
-        switch (playceId){
+        switch (placeId){
+            case 0:
+                place = new Place(0, "新手村", "在这里的都是弱鸡");
+                generate(place);
+                break;
             case 1:
-                place= PlaceData.places[0];
+                place= new Place(1, "洛阳郊外", "传闻这里经常有盗匪出没");
+                generate(place);
                 break;
             case 2:
-                place= PlaceData.places[1];
-                break;
-            case 3:
-                place= PlaceData.places[2];
+                place= new Place(2, "阴曹地府", "难辨五指的黑暗中危机四伏");
+                generate(place);
                 break;
             default:
                 place=null;
@@ -36,10 +43,19 @@ public class PlaceService {
         //3.返回选择的场景对象
         return place;
     }
-    public static void placeShow(){
-        // 输出游戏场景数据PlaceData中存在的场景信息
-        for (int i=0;i<=PlaceData.places.length;i++){
-            System.out.println(i+1+"."+PlaceData.places[i].getPlaceName());
+
+    public static void generate(Place place){
+        ArrayList<Enemy> list = place.getEnemys();
+        for(int i = place.getID() * 3 + 1; i <= (place.getID() + 1) * 3; i++){
+            Enemy enemy = enemyDao.inquiryEnemy(i);
+            enemy.setEnemy_id(i);
+            if(enemy.getID() % 3 == 0){
+                enemy.setProfession(professionDao.inquiry(3));
+            }else {
+                enemy.setProfession(professionDao.inquiry(2));
+            }
+            list.add(enemy);
         }
+        place.setEnemys(list);
     }
 }

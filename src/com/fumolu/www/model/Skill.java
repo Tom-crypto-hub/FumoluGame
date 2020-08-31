@@ -1,5 +1,7 @@
 package com.fumolu.www.model;
 
+import java.util.Objects;
+
 /**
  * 技能
  */
@@ -68,6 +70,19 @@ public class Skill {
 
     public void setMana(int mana) {
         this.mana = mana;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Skill)) return false;
+        Skill skill = (Skill) o;
+        return getID() == skill.getID() &&
+                getSkillMoney() == skill.getSkillMoney() &&
+                getAttackAddition() == skill.getAttackAddition() &&
+                getMana() == skill.getMana() &&
+                Objects.equals(getSkillName(), skill.getSkillName()) &&
+                Objects.equals(getSkillInstruction(), skill.getSkillInstruction());
     }
 
     @Override

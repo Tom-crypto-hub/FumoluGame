@@ -14,6 +14,6 @@ public interface NpcService {
      * @param player
      *            访问NPC的玩家
      */
-    void helpPlayer(Player player);
+    boolean helpPlayer(Player player);
 
 }

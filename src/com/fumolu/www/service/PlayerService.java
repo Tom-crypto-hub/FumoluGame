@@ -2,15 +2,19 @@ package com.fumolu.www.service;
 
 import com.fumolu.www.dao.PlayerDao;
 import com.fumolu.www.dao.ProfessionDao;
+import com.fumolu.www.dao.SkillDao;
 import com.fumolu.www.data.FightStatus;
 import com.fumolu.www.model.Enemy;
 import com.fumolu.www.model.Player;
 import com.fumolu.www.model.Profession;
 import com.fumolu.www.model.Skill;
+import com.fumolu.www.utils.RoleUtils;
 import com.fumolu.www.utils.ScannerUtil;
 import com.sun.deploy.net.HttpRequest;
 import com.fumolu.www.utils.RandomUtil;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PlayerService {
@@ -31,6 +35,10 @@ public class PlayerService {
         } else {
             return null;
         }
+    }
+
+    public static List<Skill> getSkills(int playerID){
+        return playerDao.inquiry(playerID);
     }
 
     // 注册的一个逻辑，通过实例化PlayerDao 去判断
@@ -132,34 +140,67 @@ public class PlayerService {
      * @param enemy
      *            挑战的敌人
      */
-    public static void fight(Player player, Enemy enemy, FightStatus status) {
+    public static String fight(Player player, Enemy enemy, FightStatus status, String skillName) {
         // 传入的是玩家的行为，使用的是
         // 普通攻击还是法术功击，还是防御，还是技能攻击，还是逃跑
+        int hert = 0;
+        String result = "";
+        int temp = 0;
         switch (status){
             case FIGHT_ERROR:
-                break;
             case FIGHT_DEFENCE:
+                return "";
             case FIGHT_RUN_AWAY:
-                break;
+                int money = RandomUtil.random.nextInt(100) - 50;
+                player.setMoney(player.getMoney() - money);
+                return "玩家逃跑了，掉落了金币：" + money;
             case FIGHT_MAGIC_ATTACK:
-                magicAttack(player);
-                break;
+                temp = magicAttack(player);
+                hert = temp - enemy.getMagicDefense();
+                if (hert < 0 ) hert = 1;
+                if(RandomUtil.isSuccess(enemy.getDodgeRate())){
+                    return "敌人闪避了玩家的法术攻击";
+                }
+                if(temp > player.getPhysicalAttack()) result += "暴击：";
+                enemy.setHp(Math.max(enemy.getHp() - hert, 0));
+                return result + "玩家使用法术攻击对敌人造成了" + hert + "点伤害值";
+
             case FIGHT_SKILL_ATTACK:
-                userSkill(player);
-                break;
+                hert = userSkill(player, skillName);
+                if(hert == -1){
+                    return "玩家想释放技能《" + skillName + "》，但是法力值不足，行动失败";
+                }
+                hert -=  - enemy.getMagicDefense() - enemy.getPhysicalDefense();
+                if(hert < 0) hert = 1;
+
+                if(hert > 0 && skillName.equals("春风吹又生")){
+                    int HP = Math.min(player.getMaxHp(), player.getHp() + hert);
+                    return "玩家释放技能《吹风吹又生》为自己恢复了" + HP + "点生命值";
+                }
+                if(RandomUtil.isSuccess(enemy.getDodgeRate())){
+                    return "敌人闪避了玩家的技能攻击";
+                }
+                // 判断是否特殊回血技能
+                if(hert >= 0 && skillName.equals("嗜狼印")){
+                    int HP = Math.min(player.getMaxHp(), player.getHp() + (int)(hert * 0.5));
+                    player.setHp(HP);
+                    result += "玩家恢复了" + HP + "血量，";
+                }
+                enemy.setHp(Math.max(enemy.getHp() - hert, 0));
+                return "玩家使用技能：" + skillName + "对敌人造成了" + hert + "点伤害值";
+
             case FIGHT_PYHSICAL_ATTACK:
-                physicalAttack(player);
-                break;
-            case FIGHT_CURE:
-                cure(player);
-
-
+                temp = physicalAttack(player);
+                hert = temp - enemy.getPhysicalDefense();
+                if (hert < 0 ) hert = 1;
+                if(RandomUtil.isSuccess(enemy.getDodgeRate())){
+                    return "敌人闪避了玩家的物理攻击";
+                }
+                if(temp > player.getPhysicalAttack()) result += "暴击：";
+                enemy.setHp(Math.max(enemy.getHp() - hert, 0));
+                return result + "玩家使用物理攻击对敌人造成了" + hert + "点伤害值";
         }
-        // 如果状态是ERROR的话直接退出
-
-        // 玩家各种行为的处理以及攻击方是否暴击，被攻击方是否闪避
-
-
+        return "";
     }
 
     /**
@@ -171,10 +212,11 @@ public class PlayerService {
      */
     private static int physicalAttack(Player player) {
 
-        if (RandomUtil.isSuccess(player.getDodgeRate()))
-            return 0;
-        else if (RandomUtil.isSuccess(player.getCritRate())){
-            return player.getPhysicalAttack()*2;
+//        if (RandomUtil.isSuccess(player.getDodgeRate()))
+//            return 0;
+        // 判断玩家的攻击是否产生了暴击
+        if (RandomUtil.isSuccess(player.getCritRate())){
+            return (int)(player.getPhysicalAttack()*1.5);
         }else
             return player.getPhysicalAttack();
 
@@ -188,13 +230,14 @@ public class PlayerService {
      * @return 攻击产生的伤害
      */
     private static int magicAttack(Player player) {
-        if (RandomUtil.isSuccess(player.getDodgeRate()))
-            return 0;
-        else if (RandomUtil.isSuccess(player.getCritRate())){
-            return player.getMagicAttack()*2;
+//        // 判断玩家是否闪避
+//        if (RandomUtil.isSuccess(player.getDodgeRate()))
+//            return 0;
+        // 判断玩家是否造成了暴击
+        if (RandomUtil.isSuccess(player.getCritRate())){
+            return (int)(player.getMagicAttack() * 1.5);
         }else
             return player.getMagicAttack();
-
     }
 
     /**
@@ -206,18 +249,36 @@ public class PlayerService {
      * @param enemy
      *            被击败的敌人
      */
-    private static void victory(Player player, Enemy enemy) {
-        if (player.getMaxExp()-player.getExp() > enemy.getExp()){
-            player.setExp(player.getExp()+ enemy.getExp());
-            player.setMoney(player.getMoney() + enemy.getMoney());
-        }
-        if (player.getMaxExp()-player.getExp() <= enemy.getExp()){
+    public static boolean victory(Player player, Enemy enemy) {
+        // 获得金币
+        player.setMoney(player.getMoney() + enemy.getMoney());
+        // 玩家获得经验值
+        player.setExp(player.getExp() + enemy.getExp());
+        // 判断玩家经验值是否超过最大经验，超过则升级
+        while (player.getMaxExp() <= player.getExp()){
             levelUp(player);
-            player.setMoney(player.getMoney() + enemy.getMoney());
-
         }
-
+        // 更新玩家数据
+        return new PlayerDao().update(player);
     }
+
+    /**
+     * 战斗失败后玩家将损失金币，损失值为怪物身上的金币的50%，和怪物经验值的30%
+     *
+     * @param player
+     *            战斗失败的玩家
+     * @param enemy
+     *            胜利的的敌人
+     */
+    public static boolean fail(Player player, Enemy enemy) {
+        // 损失金币
+        player.setMoney(player.getMoney() - (int)(enemy.getMoney() * 0.5));
+        // 损失怪物经验的30%
+        player.setExp(player.getExp() - (int) (enemy.getExp() * 0.3));
+        // 更新玩家数据
+        return new PlayerDao().update(player);
+    }
+
     /**
      * 玩家升级
      *
@@ -225,16 +286,30 @@ public class PlayerService {
      *            要升级的玩家
      */
     private static void levelUp(Player player) {
-        ProfessionDao professionDao = new ProfessionDao();
-        Profession profession = professionDao.inquiry(player.getProfession().getID());
-        player.setMaxExp(player.getMaxExp()*2);
-        player.setHp(player.getHp() + profession.getHpGrow());
+        Profession profession = player.getProfession();
+        System.out.println(profession.toString());
+        player.setMaxExp(RoleUtils.ExpRole(player.getMaxExp()));
+        // 等级+1
+        player.setLevel(player.getLevel() + 1);
+        // 当等级升到20级的时候拥有一个独有技能
+        if(player.getLevel() == 20) {
+            List<Skill> skills = player.getSkills();
+            Skill newSkill = null;
+            if (player.getProfession().getProfessionName().equals("剑客")) {
+                newSkill = new SkillDao().inquirySkill(4);
+            } else {
+                newSkill = new SkillDao().inquirySkill(2);
+            }
+            skills.add(newSkill);
+            player.setSkills(skills);
+        }
+        // 设置最大属性值得增加
+        player.setMaxHp(player.getMaxHp() + profession.getHpGrow());
         player.setMagicAttack(player.getMagicAttack() + profession.getMagicAttackGrow());
         player.setPhysicalAttack(player.getPhysicalAttack() + profession.getPhysicalAttackGrow());
         player.setPhysicalDefense(player.getPhysicalDefense() + profession.getPhysicalDefenseGrow());
         player.setMagicDefense(player.getMagicDefense() + profession.getMagicDefenseGrow());
-        player.setMana(player.getMana() + profession.getManaGrow());
-
+        player.setMaxMana(player.getMaxMana() + profession.getManaGrow());
     }
 
     /**
@@ -244,31 +319,28 @@ public class PlayerService {
      *            参与战斗的玩家
      * @return 技能产生的伤害
      */
-    private static int userSkill(Player player) {
-        Skill skill = new Skill();
-        if (player.getCharacterName().equals("剑士")){
-            player.setPhysicalAttack(player.getPhysicalAttack()+skill.getAttackAddition());
-            return player.getPhysicalAttack();
+    private static int userSkill(Player player, String skillName) {
+        // 获取玩家拥有的技能
+        List<Skill> list = player.getSkills();
+        for(int i = 0; i < list.size(); i++){
+            if(skillName.equals(list.get(i).getSkillName()) ){
+                if(player.getMana() >= list.get(i).getMana()) {
+                    // 玩家消耗法力值
+                    player.setMana(player.getMana() - list.get(i).getMana());
+                    // 获取玩家的职业，返回攻击值
+                    if (player.getProfession().getProfessionName().equals("剑客")) {
+                        return player.getPhysicalAttack() * list.get(i).getAttackAddition();
+                    } else {
+                        return player.getMagicAttack() * list.get(i).getAttackAddition();
+                    }
+                }else {
+                    // 玩家法力值不足
+                    return -1;
+                }
+            }
         }
-        else {
-            player.setMagicAttack(player.getMagicAttack()+skill.getAttackAddition());
-            return player.getMagicAttack();
-        }
-
-    }
-    //防御
-    private static int defence(Enemy enemy){
-//        enemy.
-
-
-
-        return 0;
-    }
-    //治疗
-    private static void cure(Player player){
-        player.setHp(player.getHp() + (player.getHp()/2));
-        if (player.getHp() > player.getMaxHp())
-            player.setHp(player.getMaxHp());
+        // 没有找到该技能
+        return -2;
     }
 
 }

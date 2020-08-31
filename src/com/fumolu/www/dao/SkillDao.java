@@ -48,4 +48,28 @@ public class SkillDao  extends BaseDao{
         }
         return list;
     }
+
+    public Skill inquirySkill(int skillID) {
+        String sql = "SELECT * FROM skill where skill.skill_id="+skillID;
+        Skill skill = new Skill();
+        openConnection();
+        try{
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()) {
+                skill.setID(rs.getInt("skill_id"));
+                skill.setSkillName(rs.getString("skillName"));
+                skill.setSkillMoney(rs.getInt("skillMoney"));
+                skill.setAttackAddition(rs.getInt("attackAddition"));
+                skill.setSkillInstruction(rs.getString("skillInstruction"));
+                skill.setMana(rs.getInt("mana"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }finally {
+            closeConnection();
+        }
+        return skill;
+    }
 }

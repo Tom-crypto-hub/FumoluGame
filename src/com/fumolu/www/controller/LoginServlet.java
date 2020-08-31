@@ -28,6 +28,9 @@ public class LoginServlet extends HttpServlet {
         Player player = PlayerService.login(username, password);
         // 登录成功
         if(player != null){
+            // 读取玩家是否获得的技能。
+            player.setSkills(PlayerService.getSkills(player.getUserID()));
+
             HttpSession session = request.getSession(true);
             // 将玩家账号存入session
             session.setAttribute("loginuser", username);

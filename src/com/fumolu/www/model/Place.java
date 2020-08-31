@@ -1,9 +1,12 @@
 package com.fumolu.www.model;
 
+import java.util.ArrayList;
+
 /**
  * 游戏场景，包含敌人
  */
 public class Place {
+    private int ID;
     // 地名
     private String placeName;
 
@@ -11,14 +14,23 @@ public class Place {
     private  String placeIntroduction;
 
     // 区域敌人
-    private Enemy enemys[] = new Enemy[10];
+    private ArrayList<Enemy> enemys = new ArrayList<>();
 
     public Place() {
     }
 
-    public Place(String placeName, String placeIntroduction) {
+    public Place(int ID, String placeName, String placeIntroduction) {
+        this.ID = ID;
         this.placeName = placeName;
         this.placeIntroduction = placeIntroduction;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public String getPlaceName() {
@@ -37,11 +49,11 @@ public class Place {
         this.placeIntroduction = placeIntroduction;
     }
 
-    public Enemy[] getEnemys() {
+    public ArrayList<Enemy> getEnemys() {
         return enemys;
     }
 
-    public void setEnemys(Enemy[] enemys) {
+    public void setEnemys(ArrayList<Enemy> enemys) {
         this.enemys = enemys;
     }
 }

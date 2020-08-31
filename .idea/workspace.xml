@@ -7,155 +7,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5cdceb6-1422-40d0-b5f5-348f21e8473c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/InitPlayerServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/BaseDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/EnemyDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/PlaceDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/ProfessionDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/SkillDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/EnemyData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/FightStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/NpcData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/PlaceData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/ProfessionData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/SkillData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Character.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Enemy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Npc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Place.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Profession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Skill.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/EnemyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlaceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/ProfessionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/AbstractNpcService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcDoctorService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcMasterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcStoreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RandomUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RoleUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/ScannerUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/InitPlayerServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/heal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/learn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/occupation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/regester.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/skill.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/bg-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/fight.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/h-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/heal-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/heal.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/learn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/loginBG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/magician.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/regestBG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/s-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/swordsman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/wan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/img/yu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/learn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/lib/mysql-connector-java-8.0.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/occupation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/regester.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/skill.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/skill.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/InitPlayerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/InitPlayerServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/BaseDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlaceDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/ProfessionDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/SkillDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/EnemyData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/FightStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/NpcData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/PlaceData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/ProfessionData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/SkillData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Character.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Enemy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Npc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Place.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Profession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Skill.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/EnemyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlaceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/ProfessionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/AbstractNpcService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcDoctorService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcMasterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcStoreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RandomUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RoleUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/ScannerUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/heal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/learn.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/occupation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/shop.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/skill.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/HealServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/LearnSkillServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/dao/SkillDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/model/Character.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/model/Skill.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/EnemyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/npc/NpcDoctorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/npc/NpcMasterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/npc/NpcStoreService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/utils/RandomUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/utils/RoleUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/jQuery/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/jQuery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/learn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/shop.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/GoodsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/HealServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/LearnSkillServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/SelectCreepsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/SelectSceneServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chooseMonster.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chooseScene.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/HealServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/LearnSkillServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/daguai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/fight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/scene.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fight.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/learn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/skill.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jQuery/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jQuery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/commons-beanutils-1.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/commons-httpclient-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/commons-lang-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/ezmorph-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/fastjson-1.2.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/EnemyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/EnemyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/PlayerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/ProfessionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/ProfessionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/SkillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/dao/SkillDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/FightStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/FightStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/PlaceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/ProfessionData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/data/SkillData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Place.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Place.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/model/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/EnemyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/EnemyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/PlayerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/ProfessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/ProfessionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcDoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcDoctorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcMasterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcMasterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/service/npc/NpcStoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RandomUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RandomUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RoleUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/classes/com/fumolu/www/utils/RoleUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/InitPlayerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/InitPlayerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/dao/PlayerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/class/com/fumolu/www/service/PlayerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/heal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/heal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/learn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/skill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/skill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/skill.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/controller/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/EnemyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/EnemyDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/PlayerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/ProfessionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/ProfessionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/dao/SkillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/dao/SkillDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/data/FightStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/data/FightStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/data/PlaceData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/data/ProfessionData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/data/SkillData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/model/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/model/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/EnemyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/PlaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/PlaceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/PlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/ProfessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcDoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcDoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcMasterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcMasterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/service/npc/NpcStoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/utils/RandomUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/utils/RandomUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fumolu/www/utils/RoleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fumolu/www/utils/RoleUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/heal.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FumoluGame_war_exploded/heal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/occupation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/regester.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/regester.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/EnemyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlayerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/PlayerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/ProfessionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/ProfessionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/SkillDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/dao/SkillDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/FightStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/data/FightStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/PlaceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/ProfessionData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/data/SkillData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Place.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Place.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/model/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/EnemyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/EnemyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/PlayerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/ProfessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/ProfessionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcDoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcDoctorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcMasterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcMasterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/service/npc/NpcStoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RandomUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RandomUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RoleUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/class/com/fumolu/www/utils/RoleUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/heal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/heal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/learn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/learn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/learn.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/skill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/skill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/skill.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,8 +160,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -199,7 +195,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\javaCode\IDEAProject\Project\FumoluGame\web" />
+      <recent name="G:\javaCode\IDEAProject\Project\FumoluGame\web\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\javaCode\IDEAProject\Project\FumoluGame\web\img" />
+      <recent name="G:\javaCode\IDEAProject\Project\FumoluGame\web\lib" />
+      <recent name="G:\javaCode\IDEAProject\Project\FumoluGame\web" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.46">
     <configuration name="BaseDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -216,7 +225,9 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.html" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8085/login.html" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="FumoluGame:war exploded">
@@ -227,6 +238,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_FumoluGame" />
+        <option name="HTTP_PORT" value="8085" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -310,6 +322,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -332,6 +349,11 @@
       <workItem from="1598659491204" duration="778000" />
       <workItem from="1598694900265" duration="2609000" />
       <workItem from="1598700109803" duration="394000" />
+      <workItem from="1598772575528" duration="7351000" />
+      <workItem from="1598781456807" duration="1034000" />
+      <workItem from="1598782578396" duration="23236000" />
+      <workItem from="1598831934188" duration="1509000" />
+      <workItem from="1598834121184" duration="1079000" />
     </task>
     <servers />
   </component>
@@ -343,79 +365,100 @@
     <option name="LAST_COMMIT_MESSAGE" value="zt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598684847405">
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598833418841">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1598684847405" />
-    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1598659966813">
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1598833418841" />
+    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1598783648597">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598659966813" />
+    <state x="510" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598783648597" />
     <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598613635211" />
-    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598693972856">
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598782321956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598693972856" />
-    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1598615087976">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598782321956" />
+    <state x="342" y="0" key="CommitChangelistDialog2" timestamp="1598835336228">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="342" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598835336228" />
     <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598615087976" />
-    <state width="1144" height="61" key="GridCell.Tab.0.bottom" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.0.bottom" timestamp="1598834731625">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.0.center" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598834731625" />
+    <state width="1144" height="169" key="GridCell.Tab.0.center" timestamp="1598834731624">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.0.left" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598834731624" />
+    <state width="1144" height="169" key="GridCell.Tab.0.left" timestamp="1598834731623">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.0.right" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598834731623" />
+    <state width="1144" height="169" key="GridCell.Tab.0.right" timestamp="1598834731624">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.1.bottom" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598834731624" />
+    <state width="1144" height="169" key="GridCell.Tab.1.bottom" timestamp="1598834731626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.1.center" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598834731626" />
+    <state width="1144" height="169" key="GridCell.Tab.1.center" timestamp="1598834731625">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.1.left" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1598834731625" />
+    <state width="1144" height="169" key="GridCell.Tab.1.left" timestamp="1598834731625">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.1.right" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1598834731625" />
+    <state width="1144" height="169" key="GridCell.Tab.1.right" timestamp="1598834731625">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.2.bottom" timestamp="1598698310499">
+    <state width="1144" height="169" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1598834731625" />
+    <state width="1144" height="169" key="GridCell.Tab.2.bottom" timestamp="1598834731627">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598698310499" />
-    <state width="1144" height="61" key="GridCell.Tab.2.center" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598834731627" />
+    <state width="1144" height="169" key="GridCell.Tab.2.center" timestamp="1598834731626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.2.left" timestamp="1598698310498">
+    <state width="1144" height="169" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1598834731626" />
+    <state width="1144" height="169" key="GridCell.Tab.2.left" timestamp="1598834731626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1598698310498" />
-    <state width="1144" height="61" key="GridCell.Tab.2.right" timestamp="1598698310499">
+    <state width="1144" height="169" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1598834731626" />
+    <state width="1144" height="169" key="GridCell.Tab.2.right" timestamp="1598834731626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1144" height="61" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1598698310499" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1598700117902">
+    <state width="1144" height="169" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1598834731626" />
+    <state x="129" y="59" key="MergeDialog" timestamp="1598703844215">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598700117902" />
+    <state x="129" y="59" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1598703844215" />
+    <state x="383" y="89" key="MultipleFileMergeDialog" timestamp="1598703844225">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="383" y="89" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1598703844225" />
+    <state x="275" y="113" key="Vcs.Push.Dialog.v2" timestamp="1598703913231">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="113" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598703913231" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1598834271302">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598834271302" />
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598626332356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1598626332356" />
+    <state x="346" y="156" key="git4idea.merge.GitPullDialog" timestamp="1598703796924">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1598703796924" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1598786938899">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598786938899" />
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />

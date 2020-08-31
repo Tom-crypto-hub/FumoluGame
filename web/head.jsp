@@ -1,4 +1,6 @@
-<%@ page import="com.fumolu.www.model.Player" %><%--
+<%@ page import="com.fumolu.www.model.Player" %>
+<%@ page import="com.fumolu.www.model.Skill" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 2020/8/29 0029
@@ -17,7 +19,8 @@
     HttpSession httpSession = request.getSession(true);
     String loginuser = (String) httpSession.getAttribute("loginuser");
     Player player = (Player) httpSession.getAttribute("player");
-    int avatar_id = (int)httpSession.getAttribute("avatar_id");
+//    int avatar_id = (int)httpSession.getAttribute("avatar_id");
+    int avatar_id = player.getImg_id();
     String imgSrc = "";
     if(avatar_id > 2) {
         imgSrc = "img/h-" + avatar_id + ".png";
@@ -33,7 +36,7 @@
             <a href="" class="headPic">
                 <img src=<%=imgSrc%> alt="">
             </a>
-            <span class="names" id="panda"><%=loginuser%></span>
+            <span class="names" id="panda"><%=player.getCharacterName()%></span>
             <div class="information" id="infor">
                 <div class="employee">
                     <span>职业：</span>
@@ -46,6 +49,10 @@
                 <div class="employee">
                     <span>经验：</span>
                     <a href=""><%=player.getExp()%></a>
+                </div>
+                <div class="employee">
+                    <span>金币：</span>
+                    <a href=""><%=player.getMoney()%></a>
                 </div>
                 <div class="employee">
                     <span>物理攻击力：</span>
@@ -89,9 +96,20 @@
                 </div>
                 <div class="employee">
                     <span>掌握技能：</span>
-                    <a href="">御剑术</a>
-                    <span>、</span>
-                    <a href="">万剑术</a>
+                    <%
+                        List<Skill> list = player.getSkills();
+                        int i = 0;
+                        while (i < list.size()){
+                    %>
+                            <a href=""><%=list.get(i).getSkillName()%></a>
+                    <%
+                            if(++i != list.size()){
+                    %>
+                                <span>、</span>
+                    <%
+                            }
+                        }
+                    %>
                 </div>
             </div>
         </div>

@@ -31,4 +31,63 @@
         <url-pattern>/InitPlayerServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>HealServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.HealServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HealServlet</servlet-name>
+        <url-pattern>/HealServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LearnSkillServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.LearnSkillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LearnSkillServlet</servlet-name>
+        <url-pattern>/LearnSkillServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GoodsServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.GoodsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GoodsServlet</servlet-name>
+        <url-pattern>/GoodsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectSceneServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.SelectSceneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectSceneServlet</servlet-name>
+        <url-pattern>/SelectSceneServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectCreepsServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.SelectCreepsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectCreepsServlet</servlet-name>
+        <url-pattern>/SelectCreepsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FightingServlet</servlet-name>
+        <servlet-class>com.fumolu.www.controller.FightingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FightingServlet</servlet-name>
+        <url-pattern>/FightingServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+
 </web-app>

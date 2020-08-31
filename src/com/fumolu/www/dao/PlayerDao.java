@@ -3,9 +3,12 @@ package com.fumolu.www.dao;
 import com.fumolu.www.model.Enemy;
 import com.fumolu.www.model.Player;
 import com.fumolu.www.model.Profession;
+import com.fumolu.www.model.Skill;
 
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ClassName: PlayerDao
@@ -94,8 +97,8 @@ public class PlayerDao extends BaseDao {
                 player.setMoney(rs.getInt("money"));
                 player.setPhysicalAttack(rs.getInt("physicalAttack"));
                 player.setMagicAttack(rs.getInt("magicAttack"));
-                player.setPhysicalDefense(rs.getInt("magicAttack"));
-                player.setMagicDefense(rs.getInt("magicAttack"));
+                player.setPhysicalDefense(rs.getInt("physicalDefense"));
+                player.setMagicDefense(rs.getInt("magicDefense"));
                 player.setHp(rs.getInt("hp"));
                 player.setMaxHp(rs.getInt("maxHp"));
                 player.setMana(rs.getInt("mana"));
@@ -152,7 +155,9 @@ public class PlayerDao extends BaseDao {
     public Boolean update(Player player){
         int n = -1;
         String sql = "update `user`, `character` set " +
-                "`level`=" + player.getLevel() +
+                " img_id=" + player.getImg_id() +
+                ", characterName='" + player.getCharacterName() +
+                "', `level`=" + player.getLevel() +
                 ", exp=" + player.getExp() +
                 ", maxExp=" + player.getMaxExp() +
                 ", money=" + player.getMoney() +
@@ -203,6 +208,32 @@ public class PlayerDao extends BaseDao {
             closeConnection();
         }
         return result;
+    }
+
+    public List<Skill> inquiry(int playerID) {
+        String sql = "SELECT * FROM skill, user_skill where user_skill.skill_id=skill.skill_id and user_skill.u_id="+playerID;
+        List<Skill> list = new ArrayList<>();
+        openConnection();
+        try{
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()) {
+                Skill skill = new Skill();
+                skill.setID(rs.getInt("skill_id"));
+                skill.setSkillName(rs.getString("skillName"));
+                skill.setSkillMoney(rs.getInt("skillMoney"));
+                skill.setAttackAddition(rs.getInt("attackAddition"));
+                skill.setSkillInstruction(rs.getString("skillInstruction"));
+                skill.setMana(rs.getInt("mana"));
+                list.add(skill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }finally {
+            closeConnection();
+        }
+        return list;
     }
 
 }

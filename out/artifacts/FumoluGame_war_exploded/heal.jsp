@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ include file="head.jsp" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
 </head>
 <body>
 <div class="heal">
-    <div class="user">
+ <!--   <div class="user">
         <div class="userContent">
             <div class="userName">
                 <a href="" class="headPic">
@@ -77,7 +78,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="content">
         <div class="pics">
             <a href="">
@@ -85,10 +86,10 @@
             </a>
         </div>
         <div class="words">
-            <p>你已经疗伤完成啦！！哈哈哈哈~~~</p>
+            <p><%=(String)request.getSession(true).getAttribute("healMsg")%></p>
         </div>
         <div class="return">
-            <a href="skill.html">返回</a>
+            <a href="skill.jsp">返回</a>
         </div>
     </div>
 </div>
